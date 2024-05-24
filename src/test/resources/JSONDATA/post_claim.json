@@ -1,0 +1,21 @@
+{
+  "requests": [
+    {
+      "body": {},
+      "headers": [
+        {
+          "name": "api_key",
+          "value": "Abcd"
+        },
+        {
+          "name": "ClaimId",
+          "value": "50"
+        }
+      ],
+      "method": "delete",
+      "onFail": "abort",
+      "path": "string",
+      "query": "string"
+    }
+  ]
+}
