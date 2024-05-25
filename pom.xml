@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>AutomainWithJavaRestassured</artifactId>
+  <artifactId>AutomationWithJavaRestassured</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>AutomainWithJavaRestassured</name>
+  <name>AutomationWithJavaRestassured</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -20,12 +20,7 @@
   <dependencies>
 
 
-    <!-- ExtentReports for HTML reporting -->
-    <dependency>
-      <groupId>com.aventstack</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>5.0.9</version>
-    </dependency>
+
 
 <!--    &lt;!&ndash; Lombok for simplifying Java code &ndash;&gt;-->
 <!--    <dependency>-->
@@ -49,6 +44,20 @@
           <artifactId>testng</artifactId>
           <version>7.8.0</version>
           <scope>test</scope>
+      </dependency>
+
+      <!-- ExtentReports for HTML reporting -->
+      <dependency>
+          <groupId>com.aventstack</groupId>
+          <artifactId>extentreports</artifactId>
+          <version>4.1.6</version>
+      </dependency>
+
+      <!-- ExtentReports Dependency -->
+      <dependency>
+          <groupId>com.aventstack</groupId>
+          <artifactId>extentreports-testng-adapter</artifactId>
+          <version>1.2.1</version>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/org.skyscreamer/jsonassert -->
@@ -77,7 +86,9 @@
           <artifactId>json-path</artifactId>
           <version>2.6.0</version>
       </dependency>
+
   </dependencies>
+
 
   <build>
     <plugins>
